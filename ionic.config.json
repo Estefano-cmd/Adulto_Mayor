@@ -1,0 +1,7 @@
+{
+  "name": "adulto_mayor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
