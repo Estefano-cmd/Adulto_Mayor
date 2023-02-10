@@ -1,0 +1,1068 @@
+<ion-content>
+  <img src="../../../assets/icon/LINEAS-02.png" alt="" id="fondo">
+  <!-- UNIDAD 1 -->
+  <ion-card class="tema1">
+    <button ion-item id="tema1" expand="block">
+      <img src="../../../assets/icon/1.png" alt="" />
+    </button>
+  </ion-card>
+
+  <!-- modal tema 1 -->
+  <ion-modal #modal1 trigger="tema1" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>La Computadora</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="modal1.dismiss()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <!-- Aquí va el contenido del tema -->
+        <div class="bloque1">
+          <h3>Primeros Pasos</h3>
+          <h3>Encender la Computadora</h3>
+          <ion-slides>
+            <ion-slide>
+              <div class="slide">
+                <img src="https://i.postimg.cc/nhVjG7Kd/image.png" id="img1" />
+                <p id="p1">
+                  Comprobar que el estabilizador o regleta estén conectados y
+                  encendidos
+                  <br />
+                  <center>
+                    <img
+                      src="../../../assets/icon/deslizar-a-la-izquierda.png"
+                      alt=""
+                    />
+                  </center>
+                </p>
+              </div>
+            </ion-slide>
+            <ion-slide>
+              <div class="slide">
+                <img src="https://i.postimg.cc/Px8J6QRj/image.png" id="img1" />
+                <p id="p2">
+                  Oprimir el botón <b>encender</b> o <b>power</b>, usualmente es
+                  el botón más grande que se encuentra en la parte frontal de la
+                  torre y tiene el símbolo de encendido
+                  <ion-icon name="power"></ion-icon>.
+                </p>
+                <center>
+                  <img
+                    src="../../../assets/icon/deslizar-a-la-izquierda.png"
+                    alt=""
+                  />
+                </center>
+              </div>
+            </ion-slide>
+            <ion-slide>
+              <div class="slide">
+                <img src="https://i.postimg.cc/sfb7f2hn/image.png" id="img1" />
+                <p id="p3">
+                  Encender el monitor oprimiendo el botón de <b>encender</b> o
+                  <b>power</b>. La ubicación del botón depende del fabricante,
+                  se puede encontrar en la parte delantera, trasera o lateral de
+                  la pantalla.
+                </p>
+                <ion-button id="sabias1">
+                  <img src="../../../assets/icon/chat.png" alt="" />
+                  ¿Sabias qué?
+                </ion-button>
+                <ion-popover trigger="sabias1" triggerAction="click">
+                  <ng-template>
+                    <ion-content class="ion-padding">
+                      Al ponernos frentea nuestro equipo podemos ver que hay
+                      algunos signos, y uno muy importante es el símbolo de
+                      encendido. <br />
+                      <center>
+                        <ion-icon name="power" size="large"></ion-icon>
+                      </center>
+                    </ion-content>
+                  </ng-template>
+                </ion-popover>
+              </div>
+            </ion-slide>
+          </ion-slides>
+        </div>
+        <div class="bloque2">
+          <h3>Partes de la Computadora</h3>
+          <h4>¿Qué es la Computadora?</h4>
+          <p>
+            Es una máquina automática capaz de recibir un conjunto de
+            instrucciones.
+          </p>
+          <p>
+            Las computadoras se inventaron para realizar trabajos de manera
+            fácil, organizada y rápida.
+          </p>
+          <h5>Sus Partes son:</h5>
+          <ion-card>
+            <img
+              src="https://i.postimg.cc/rz2yGrLg/monitor.png"
+              class="componente"
+            />
+            <ion-card-header>
+              <ion-card-title>Monitor</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p style="color: black">
+                Un aparato que permite visualizar la información que se ingresa
+                a la computadora, así como conocer la información que se obtiene
+                de ella.
+              </p>
+              <center>
+                <ion-button id="sabias2">
+                  <img src="../../../assets/icon/chat.png" alt="" />
+                  ¿Sabias qué?
+                </ion-button>
+              </center>
+              <ion-popover trigger="sabias2" triggerAction="click">
+                <ng-template>
+                  <ion-content class="ion-padding">
+                    Los monitores para conectase a una computadora tienen 3
+                    tipos de conectores diferentes que son:
+                    <b>VGA, DVI Y HDMI</b><br />
+                    <center>
+                      <img
+                        src="https://i.postimg.cc/jSw4vMFZ/cable-vga.png"
+                        alt=""
+                      />
+                      <img src="https://i.postimg.cc/FsnxjMDY/dvi.png" alt="" />
+                      <img
+                        src="https://i.postimg.cc/FHMg6jtm/hdmi.png"
+                        alt=""
+                      />
+                    </center>
+                  </ion-content>
+                </ng-template>
+              </ion-popover>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card>
+            <img
+              src="https://i.postimg.cc/9z5b3TSv/teclado.png"
+              class="componente"
+            />
+            <ion-card-header>
+              <ion-card-title>Teclado</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p style="color: black">
+                Está formado por letras, números y otras teclas especiales para
+                darle ordenes a la computadora. También permite introducir datos
+                a la computadora, como ser: escribir mensajes, correos e
+                interactuar con la computadora.
+              </p>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card>
+            <img
+              src="https://i.postimg.cc/fLmWMSRx/clicker-del-mouse.png"
+              class="componente"
+            />
+            <ion-card-header>
+              <ion-card-title>Mouse</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p style="color: black">
+                Sirve para dirigir o entrar datos para que la computadora pueda
+                funcionar.
+              </p>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card>
+            <img
+              src="https://i.postimg.cc/rs98r6Ws/upc.png"
+              class="componente"
+            />
+            <ion-card-header>
+              <ion-card-title>Torre</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p style="color: black">
+                Es la parte metálica o plástica donde se encuentran muchos
+                componentes de la PC (Computadora personal); los hay
+                horizontales o verticales; en el que se encuentran todos los
+                componentes de la computadora (placas, disco duro, procesador,
+                etc.). También nos sirve para añadir más componentes como ser
+                mouse, teclado, parlantes, impresoras, cámaras entre otros.
+                También la torre nos permite encender la computadora.
+              </p>
+              <center>
+                <ion-button id="sabias3">
+                  <img src="../../../assets/icon/chat.png" alt="" />
+                  ¿Sabias qué?
+                </ion-button>
+              </center>
+              <ion-popover trigger="sabias3" triggerAction="click">
+                <ng-template>
+                  <ion-content class="ion-padding">
+                    La parte más importante de la computadora se llama CPU y se
+                    encuentra dentro de la Torre. Este CPU funciona como si
+                    fuera un cerebro para la computadora<br />
+                    <center>
+                      <img src="https://i.postimg.cc/mDgnL0jB/cpu.png" alt="" />
+                      <img
+                        src="https://i.postimg.cc/LsT7MHzx/cerebro.png"
+                        alt=""
+                      />
+                    </center>
+                  </ion-content>
+                </ng-template>
+              </ion-popover>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card>
+            <img
+              src="https://i.postimg.cc/DzWyYMVp/altavoz.png"
+              class="componente"
+            />
+            <ion-card-header>
+              <ion-card-title>Parlantes</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p style="color: black">
+                Sirven para escuchar música o cualquier sonido que pueda llegar
+                a producir la computadora.
+              </p>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card>
+            <img
+              src="https://i.postimg.cc/vTyYT84C/impresora.png"
+              class="componente"
+            />
+            <ion-card-header>
+              <ion-card-title>Impresora</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p style="color: black">
+                Sirve para obtener la información en papel para uso de las
+                personas. Es decir, imprime el trabajo que estás haciendo.
+              </p>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card>
+            <img
+              src="https://i.postimg.cc/PqBrGQTX/wifi.png"
+              class="componente"
+            />
+            <ion-card-header>
+              <ion-card-title>Módem</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p style="color: black">
+                Este aparato electrónico permite que una computadora tenga
+                acceso a <b>internet</b><br />
+                <center>
+                  <ion-button id="sabias4">
+                    <img src="../../../assets/icon/chat.png" alt="" />
+                    ¿Sabias qué?
+                  </ion-button>
+                </center>
+                <ion-popover trigger="sabias4" triggerAction="click" side="top">
+                  <ng-template>
+                    <ion-content class="ion-padding">
+                      Internet es algo que revoluciono al mundo, ya que nos
+                      abrió las puertas para la comunicación mundial e
+                      intercambio de información. Se verá sobre este tema en la
+                      Unidad 3.
+                    </ion-content>
+                  </ng-template>
+                </ion-popover>
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <!-- UNIDAD 2 -->
+  <ion-card class="tema2">
+    <button ion-item id="tema2" expand="block">
+      <img src="../../../assets/icon/2.png" alt="" />
+    </button>
+  </ion-card>
+
+  <!-- modal tema 2 -->
+  <ion-modal #modal2 trigger="tema2" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Programas</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="modal2.dismiss()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <!-- Aquí va el contenido del tema -->
+        <h3>¿Qué son los programas?</h3>
+        <p>
+          Se trata de aplicaciones y recursos que permiten desarrollar
+          diferentes tareas en una computadora.
+        </p>
+        <h4>¿Qué es un sistema operativo?</h4>
+        <p>
+          El sistema operativo es el programa principal que debe tener una
+          computadora y sirve de base para que se puedan ejecutar los programas
+          o aplicaciones.
+        </p>
+        <center>
+          <ion-button id="sabias4">
+            <img src="../../../assets/icon/chat.png" alt="" />
+            ¿Sabías qué?
+          </ion-button>
+        </center>
+        <ion-popover trigger="sabias4" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              Windows está instalado en computadoras de mas de 1500 millones de
+              habitantes en todo el mundo. Por lo cual este sistema operativo
+              será parte del estudio la universidad.<br />
+              <center>
+                <img src="https://i.postimg.cc/x8b2zskB/ventanas.png" alt="" />
+              </center>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+        <h4>¿Qué es Windows?</h4>
+        <p>
+          Windows es un sistema operativo creado por la empresa
+          <b>Microsoft</b>. Este sistema da soporte para que se ejecuten los
+          programas, organiza y mantiene todos los archivos de usuario.
+        </p>
+        <img
+          src="https://i.postimg.cc/vmGLZz3z/ventanas-1.png"
+          alt=""
+          id="img2"
+        />
+        <h5>Sus versiones:</h5>
+        <ion-slides>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/8PBfv9pM/image.png" id="img1" />
+              <h4>Windows XP -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/gj2q5p29/image.png" id="img1" />
+              <h4>Windows Vista -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/8k0h5h0V/image.png" id="img1" />
+              <h4>Windows 7 -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/v8CCn2qY/image.png" id="img1" />
+              <h4>Windows 8 -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/jdpT1sbp/image.png" id="img1" />
+              <h4>Windows 10</h4>
+            </div>
+          </ion-slide>
+        </ion-slides>
+        <h3>Al inicio con Windows</h3>
+        <p>
+          Después de seguir los pasos de la unidad anterior iniciará el sistema
+          operativo presentando una interfaz (medio de comunicación entre el
+          usuario y la computadora), está formada de diversos elementos, entre
+          ellos: el escritorio, los iconos, la barra de tareas, etc.
+        </p>
+        <img src="https://i.postimg.cc/jdpT1sbp/image.png" alt="" id="img3" />
+        <center>
+          <ion-button id="sabias5">
+            <img src="../../../assets/icon/chat.png" alt="" />
+            ¿Sabías qué?
+          </ion-button>
+        </center>
+        <ion-popover trigger="sabias5" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              Actualmente Windows 10 es el sistema más ocupado de Microsoft
+              actualmente, dicho puesto le fue arrebatadoa su versión de Windows
+              7.
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+        <h4>Parte de la interfaz de Windows 10</h4>
+        <p>
+          Se le llama Escritorio (menú de inicio) al área en la que se ubican
+          los Iconos de uso más frecuente y donde se despliegan las aplicaciones
+          en el momento en que se ejecutan. Conocer los principales elementos
+          del Sistema Operativo Windows es importante para que se utilicen
+          adecuadamente al acceder a los programas.
+        </p>
+        <img src="https://i.postimg.cc/9fNxy1Pt/image.png" alt="" id="img3" />
+        <h3>Iconos</h3>
+        <p>
+          Los Iconos son representaciones gráficas de los objetos de Windows, Un
+          icono se abre con doble clic entonces se despliega una ventana que
+          contiene los elementos necesarios al que está asociado el icono. Tanto
+          en Windows 10 como en Windows 8.1 mantiene el mismo concepto lo único
+          que cambia es el diseño.
+          <center>
+            <img src="https://i.postimg.cc/MGQgdhsK/carpeta.png" alt="" />
+          </center>
+        </p>
+        <center>
+          <ion-button id="sabias6">
+            <img src="../../../assets/icon/chat.png" alt="" />
+            ¿Sabías qué?
+          </ion-button>
+        </center>
+        <ion-popover trigger="sabias6" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              Solo pasaron dos semanas hasta que la primera ediciónde Windows
+              empezó a registrarsus primeros errores y bugs.
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <!-- UNIDAD 3 -->
+  <ion-card class="tema3">
+    <button ion-item id="tema3" expand="block">
+      <img src="../../../assets/icon/3.png" alt="" />
+    </button>
+  </ion-card>
+
+  <!-- modal tema 3 -->
+  <ion-modal #modal3 trigger="tema3" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Internet-Correo Electrónico</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="modal3.dismiss()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <!-- Aquí va el contenido del tema -->
+        <h3>¿Qué es internet?</h3>
+        <p>
+          Es una red gigantesca de computadoras y equipos unidos entre sí que
+          permiten compartir recursos, imágenes, música, documentos,
+          información, etc.
+          <center>
+            <img
+              src="https://i.postimg.cc/52YvPFG1/internet-de-las-cosas.png"
+              alt=""
+            />
+          </center>
+        </p>
+        <center>
+          <ion-button id="sabias7">
+            <img src="../../../assets/icon/chat.png" alt="" />
+            ¿Sabías qué?
+          </ion-button>
+        </center>
+        <ion-popover trigger="sabias7" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              Internet se expandió muy rápidamente. Tardó solo 4 años en llegar
+              a 50 millones de personas, mientras que a la televisión le llevo
+              13 años y a la radio 18.
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+        <h4>¿Que son los buscadores web?</h4>
+        <p>
+          Son aquellos buscadores de contenidos que requieren de una estrategia
+          de búsqueda a partir de palabras claves o frases, buscan y recuperan
+          la información que responde a esa descripción. Entre los más famosos
+          tenemos los siguientes:
+        </p>
+        <ion-slides>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/ZqH8GhTx/buscar.png" />
+              <h4>GOOGLE -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/3xgCZvV6/bing.png" />
+              <h4>BING -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/bvp0Vvjv/yahoo.png" />
+              <h4>YAHOO!</h4>
+            </div>
+          </ion-slide>
+        </ion-slides>
+        <h3>Navegadores</h3>
+        <p>
+          Un navegador es un programa que nospermite visualizar las páginas Web
+          que se encuentran alojadas en los servidores de internet, y para hacer
+          dichas búsquedas utilizan los buscadores web.
+        </p>
+        <ion-slides>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/3wZXs0Xq/cromo.png" />
+              <h4>CHROME -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/7Ypn0kPK/firefox.png" />
+              <h4>FIREFOX -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/1zS07rq6/microsoft.png" />
+              <h4>EDGE -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/MpVbYFvq/opera.png" />
+              <h4>OPERA -></h4>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/pTXfRVkL/safari.png" />
+              <h4>SAFARI</h4>
+            </div>
+          </ion-slide>
+        </ion-slides>
+        <center>
+          <ion-button id="sabias8">
+            <img src="../../../assets/icon/chat.png" alt="" />
+            ¿Sabías qué?
+          </ion-button>
+        </center>
+        <ion-popover trigger="sabias8" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              Los humanos ocupamos el 49% del internet, y el 51% restantede todo
+              el tráfico en la web proviene de bots
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+        <h3>Correo Electrónico</h3>
+        <p>
+          El correo electrónico (también conocido como email o e-mail) es uno de los servicios más comúnmente usados en Internet y permite que la gente envíe mensajes a uno o más destinatarios.
+        </p>
+        <p>
+          Como sucede con el servicio postal tradicional, para que su mensaje llegue al destinatario, todo lo que necesita saber es la dirección. Las dos ventajas principales sobre el “correo de papel” son la rapidez con la que se envía el correo electrónico (es prácticamente instantáneo) y el bajo costo (incluido en el costo de una conexión a Internet).
+        </p>
+        <h3>Creación de una cuenta de correo (Gmail)</h3>
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/k5YRmQHB/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>1° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Entrar al navegador y en la barra de direcciones escribir 
+              <b>www.gmail.com</b> y presionarla tecla <b>INTRO</b>.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/MGmtbFXg/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>2° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Se re direccionará a la siguiente ventana, en la cual se 
+              deberá dar clic en <b>CREAR UNA CUENTA</b>, la opción 
+              acceder permite acceder a una cuenta ya creada, se podrá
+              usar cuando se cree la cuenta.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/MGmtbFXg/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>3° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Se re direccionará al siguiente formulario, el cual se llenará 
+              con los datos personales y luego dar clic en <b>Siguiente</b>. <br>
+              <center>
+                <ion-button id="sabias9">
+                  <img src="../../../assets/icon/chat.png" alt="" />
+                  ¿Sabías qué?
+                </ion-button>
+              </center>
+              <ion-popover trigger="sabias9" triggerAction="click">
+                <ng-template>
+                  <ion-content class="ion-padding">
+                    Alrededor del 16 al 20% de búsquedas de se hacen en google 
+                    cada día son originales y nunca se han hecho antes.
+                  </ion-content>
+                </ng-template>
+              </ion-popover>
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/XJQGnTYK/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>4° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Se re direccionará a otro formulario, el cual se llenará con los 
+              datos solicitados y dar clic en <b>Siguiente</b>. 
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/NFnxjyjx/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>5° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Aceptar los términos y condiciones. 
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/852h22Ky/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>6° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Listo, ya está creado el correo electrónico (Gmail). <br>
+              <center>
+                <ion-button id="sabias10">
+                  <img src="../../../assets/icon/chat.png" alt="" />
+                  ¿Sabías qué?
+                </ion-button>
+              </center>
+              <ion-popover trigger="sabias10" triggerAction="click">
+                <ng-template>
+                  <ion-content class="ion-padding">
+                    Más de 100 mil millones de correos electrónicos son 
+                    enviados diariamente.
+                  </ion-content>
+                </ng-template>
+              </ion-popover>
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+  <!-- UNIDAD 4 -->
+  <ion-card class="tema4">
+    <button ion-item id="tema4" expand="block">
+      <img src="../../../assets/icon/4.png" alt="" />
+    </button>
+  </ion-card>
+
+  <!-- modal tema 4 -->
+  <ion-modal #modal4 trigger="tema4" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Redes Sociales</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="modal4.dismiss()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <!-- Aquí va el contenido del tema -->
+        <h3>¿Qué son las redes sociales?</h3>
+        <p>
+          Una red social es una estructura capaz de comunicar entre sí a personas o instituciones. A través de internet se pueden establecer relaciones que creen grupos o comunidades con intereses comunes.
+        </p>
+        <img src="https://i.postimg.cc/GmRN4HBC/redes-sociales.png" alt="" id="img2">
+        <center>
+          <ion-button id="sabias11">
+            <img src="../../../assets/icon/chat.png" alt="" />
+            ¿Sabías qué?
+          </ion-button>
+        </center>
+        <ion-popover trigger="sabias11" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              Las redes sociales son un medio masivo de comunicación que más 
+              cobertura tiene en todos loa ámbitos: en lo social, en los negocios 
+              e incluso en los temas más exóticos.
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+        <h4>Facebook</h4>
+        <p>
+          Es la Red Social más grande del mundo, en la que podemos construir 
+          comunidades de personasen línea, en la cual podemos compartir actvididades 
+          o intereses.
+        </p>
+        <img src="https://i.postimg.cc/15WS1GCd/facebook.png" alt="" id="img2">
+        <h3>Creación de una cuenta de Facebook</h3>
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/sx4fzN6W/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>1° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              A continuación, en el navegador en la barra de navegación 
+              escribir la dirección web de Facebook <b>(facebook.com)</b><br>
+              <center>
+                <ion-button id="sabias12">
+                  <img src="../../../assets/icon/chat.png" alt="" />
+                  ¿Sabías qué?
+                </ion-button>
+              </center>
+              <ion-popover trigger="sabias12" triggerAction="click">
+                <ng-template>
+                  <ion-content class="ion-padding">
+                    Facebook es junto con Google la página más visitada 
+                    en internet.
+                  </ion-content>
+                </ng-template>
+              </ion-popover>
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/HWM1yRt4/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>2° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Aparecerá la pantalla principal de la red social Facebook.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/nzRr95Yt/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>3° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              En el campo de dice <b>Crear una cuenta nueva</b> ingresar los 
+              datos que solicite: Nombre, Apellido, correo electrónico, elegir 
+              una contraseña para Facebook, sexo y fecha de nacimiento. Una vez 
+              rellenados todos los campos hacer clic en el botón que pone <b>Registrarte</b>
+              <br>
+              <center>
+                <ion-button id="sabias13">
+                  <img src="../../../assets/icon/chat.png" alt="" />
+                  ¿Sabías qué?
+                </ion-button>
+              </center>
+              <ion-popover trigger="sabias13" triggerAction="click">
+                <ng-template>
+                  <ion-content class="ion-padding">
+                    En promedio los usuarios de Facebook hacen tres amigos nuevos 
+                    al mes. En total tienen una media de 130 amigos.
+                  </ion-content>
+                </ng-template>
+              </ion-popover>
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/VNympw46/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>4° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Aparecerá la siguiente ventana, es para confirmar el correo 
+              electrónico, dar clic en <b>Conectar con Gmail</b>.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/Bn54ryzB/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>5° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Seguidamente aparecerá una ventana en donde se tendrá que escoger 
+              la cuenta con la que se registró Facebook.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/6p81RGr2/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>6° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Luego aparecerá una confirmación sobre la cuenta, dar clic 
+              en <b>Aceptar</b>. <br>
+              <center>
+                <ion-button id="sabias14">
+                  <img src="../../../assets/icon/chat.png" alt="" />
+                  ¿Sabías qué?
+                </ion-button>
+              </center>
+              <ion-popover trigger="sabias14" triggerAction="click">
+                <ng-template>
+                  <ion-content class="ion-padding">
+                    Coca-Cola es la marca más popular en la red social. Hasta 
+                    el momento tiene 51 millones 455 mil 779 fans.
+                  </ion-content>
+                </ng-template>
+              </ion-popover>
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/SxjNMV16/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>7° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Luego dar clic en siguiente, aparecerá una ventana emergente 
+              que es para agregar amigos, dar clic en <b>omitir este paso</b> 
+              ya que luego se podrá agregar los amigos que uno desee.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/05LLfnNG/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>8° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Listo, la cuenta de Facebook estará creada, seguidamente dar 
+              clic en el cuadro verde <b>Agregar Foto</b> para cambiar la foto de 
+              perfil para la cuenta de facebook.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img
+            src="https://i.postimg.cc/wxVm5f2Z/image.png"
+          />
+          <ion-card-header>
+            <ion-card-title>9° PASO</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="color: black">
+              Luego se deberá escoger una foto de cualquier carpeta, 
+              una vez seleccionada la imagen dar clic en <b>Abrir</b>. Y 
+              listo, estará el perfil de Facebook creado.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+  <!-- UNIDAD 5 -->
+  <ion-card class="tema5">
+    <button ion-item id="tema5" expand="block">
+      <img src="../../../assets/icon/5.png" alt="" />
+    </button>
+  </ion-card>
+
+  <!-- modal tema 5 -->
+  <ion-modal #modal5 trigger="tema5" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Ofimática Básica</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="modal5.dismiss()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <!-- Aquí va el contenido del tema -->
+        <h3>Ofimática</h3>
+        <p>
+          Es la automatización y optimización de las tareas habituales de una oficina. Muchas actividades que antes se realizaban de forma manual, como la redacción de comunicados, ahora se encuentran facilitadas gracias a la tecnología. La ofimática permite ahorrar tiempo y, por lo tanto, aumentar la rentabilidad de las oficinas.
+        </p>
+        <h4>Microsoft Office</h4>
+        <p>
+          Microsoft Office es un paquete de programas informáticos para oficina y hogar desarrollado por Microsoft.
+        </p>
+        <img src="https://i.postimg.cc/Y0GT7np3/office.png" id="img2">
+        <center>
+          <ion-button id="sabias15">
+            <img src="../../../assets/icon/chat.png" alt="" />
+            ¿Sabías qué?
+          </ion-button>
+        </center>
+        <ion-popover trigger="sabias15" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              Office 97 fue la última versión de la suite en salir 
+              en diskettes, posteriormente se ofreció en CDs.
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+        <p>
+          Se trata de un conjunto de aplicaciones que realizan tareas ofimáticas, es decir, que permiten automatizar y perfeccionar las actividades habituales de una oficina como ser la redacción de documentos, pero mediante una computadora.
+        </p>
+        <h3>Microsoft Office Word 2016</h3>
+        <img src="https://i.postimg.cc/MKFZSNqC/word.png" id="img2">
+        <p>
+          Microsoft Word es un software informático procesador de texto, de los más utilizados a la hora de trabajar con documentos digitales en la actualidad.
+        </p>
+        <h3>Ejecutar el programa Word 2016</h3>
+        <ion-slides>
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/MKFZSNqC/word.png" />
+              <p id="p1">
+                Doble clic al acceso directo de Word que se encuentra en el 
+                escritorio.
+                También se puede acceder escribiendo la palabra <b>Word</b> 
+                en el buscador de Windows 10 presionando la tecla Windows o 
+                haciendo clic en el logo <ion-icon name="windows"></ion-icon>
+                <br />
+                <center>
+                  <img
+                    src="../../../assets/icon/deslizar-a-la-izquierda.png"
+                    alt=""
+                  />
+                </center>
+              </p>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/65hNzPms/image.png" id="img1"/>
+              <p id="p1">
+                Aparecerá la siguiente ventana, dar clic en la opción 
+                <b>Instalar solo actualizaciones</b> y luego dar clic en 
+                <b>Aceptar</b>
+                <br />
+                <center>
+                  <img
+                    src="../../../assets/icon/deslizar-a-la-izquierda.png"
+                    alt=""
+                  />
+                </center>
+              </p>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/5tSKLH98/image.png" id="img1"/>
+              <p id="p1">
+                Luego se dará clic donde la opción <b>Documento en blanco</b> 
+                para empezar a redactar algún texto que se quiere escribir en este 
+                programa.
+                <br />
+                <center>
+                  <img
+                    src="../../../assets/icon/deslizar-a-la-izquierda.png"
+                    alt=""
+                  />
+                </center>
+                <center>
+                  <ion-button id="sabias16">
+                    <img src="../../../assets/icon/chat.png" alt="" />
+                    ¿Sabías qué?
+                  </ion-button>
+                </center>
+                <ion-popover trigger="sabias16" triggerAction="click">
+                  <ng-template>
+                    <ion-content class="ion-padding">
+                      Recién un año después, el 10 de noviembre de 1990, 
+                      es cuando debuta en versión de Pcs con Windows.
+                    </ion-content>
+                  </ng-template>
+                </ion-popover>
+              </p>
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div class="slide">
+              <img src="https://i.postimg.cc/NjB2zL7N/image.png" id="img1"/>
+              <p id="p1">
+                Ya esta listo para empezar a escribir en el documento.
+              </p>
+            </div>
+          </ion-slide>
+        </ion-slides>    
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>

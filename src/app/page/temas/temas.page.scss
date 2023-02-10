@@ -1,0 +1,71 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tema1, .tema2, .tema3, .tema4, .tema5{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 0 5px 0 0 rgba(0,0,0,.05);
+    position: relative;
+    z-index: 1;
+}
+.tema1, .tema3, .tema5{
+    position: block;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.tema2, .tema4{
+    position: block;
+    margin-left: 70%;
+    margin-top: 10%;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: #fff; 
+}
+button, .tema1, .tema2, .tema3, .tema4, .tema5:hover{
+    margin-top: 5%;
+}
+h3{
+    color: #cf0a2c;
+    font-weight:bolder;
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+p{
+    text-align: justify;
+    width: 90%;
+    padding: 0 0 0 30px;
+    font-size: medium;
+}
+#img1{
+    width: 90%;
+}
+#p1{
+    margin-top: 20%;
+}
+ion-card{
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 5px 0 0 rgba(0,0,0,.05);
+    display: inline-block;
+    border-color: black !important;
+}
+ion-card .componente{
+    margin-left: 30%;
+}
+#img2{
+    margin-left: 30%;
+}
+#img3{
+    width: 90%;
+    margin-left: 5%;
+}
+#fondo{
+    position: absolute;
+    z-index: 0;
+}
